@@ -14,10 +14,6 @@ footer {
   padding-top: 15px;
 }
 
-.footer-icons__img {
-  width: 30px;
-}
-
 .footer-icons {
   display: flex;
   justify-content: center;
@@ -31,4 +27,25 @@ footer {
 .footer-icons__desc {
   font-size: 10px;
   margin-top: 4px;
+}
+
+@keyframes icons-둥-둥 {
+  0% {
+    transform: translatey(0px);
+  }
+  30% {
+    transform: translatey(-10px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.footer-icons__img {
+  width: 30px;
+}
+
+.footer-icons:hover .footer-icons__img {
+  animation: 2s icons-둥-둥;
 }
